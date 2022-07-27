@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class Zora extends Fighter {
 
 
-    public Zora (String name, int rupees, int health, ArrayList<Weapon> weapons, Weapon currentWeapon){
-        super (name, rupees, health, weapons, currentWeapon);
+    public Zora (String name, int rupees, int health, Weapon weapon){
+        super (name, rupees, health, weapon);
 
     }
 
