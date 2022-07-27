@@ -1,14 +1,16 @@
-package character;
+package character.playing;
 
 public abstract class Player {
     private String name;
     private int rupees;
+    private int health;
 
 
 
-    public Player(String name, int rupees) {
+    public Player(String name, int rupees, int health) {
         this.name = name;
         this.rupees = rupees;
+        this.health = health;
     }
 
     public String getName() {
@@ -26,5 +28,9 @@ public abstract class Player {
 
     public void setRupees(int rupees) {
         this.rupees = rupees;
+    }
+
+    public int getHealth() {
+        return health;
     }
 }
