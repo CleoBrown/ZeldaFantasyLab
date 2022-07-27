@@ -1,7 +1,6 @@
-import character.moves.GoodyWeapons;
+import character.moves.Weapon;
 import character.playing.Goodies;
 import org.junit.Before;
-import character.playing.PCs;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -14,8 +13,8 @@ public class GoodiesTest {
 
     @Before
     public void before(){
-        link = new Goodies("Link",100, GoodyWeapons.MASTERSWORD, PCs.LINK);
-        zelda = new Goodies("Zelda", 200, GoodyWeapons.RAPIER, PCs.ZELDA );
+        link = new Goodies("Link",100, Weapon.MASTERSWORD, PCs.LINK);
+        zelda = new Goodies("Zelda", 200, Weapon.RAPIER, PCs.ZELDA );
     }
 
     @Test
