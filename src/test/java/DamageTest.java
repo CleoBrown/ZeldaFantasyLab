@@ -1,6 +1,5 @@
-import character.moves.GoodyWeapons;
+import character.moves.Weapon;
 import character.playing.Goodies;
-import character.playing.PCs;
 import character.nonplaying.NPCs;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,11 +7,11 @@ import org.junit.Test;
 public class DamageTest {
 
     NPCs npcs;
-    GoodyWeapons weapons;
+    Weapon weapons;
 
     @Before
     public void before(){
-        weapons = (GoodyWeapons.MASTERSWORD);
+        weapons = (Weapon.MASTERSWORD);
         npcs = (NPCs.GANON);
     }
 
