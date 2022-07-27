@@ -1,5 +1,5 @@
 package character.nonplaying;
-import character.Player;
+import character.playing.Player;
 
 public class Baddies extends Player {
 
