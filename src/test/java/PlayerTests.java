@@ -21,9 +21,9 @@ public class PlayerTests {
 
     @Before
     public void before(){
-        link = new Hylian("Link",100, 70, Weapon.MASTERSWORD);
-        zelda = new Hylian("Zelda", 200, 80, Weapon.RAPIER );
-        revali = new Rito("Revali", 500, 80, Weapon.DAKULEAF);
+        link = new Hylian("Link",100, 300, Weapon.MASTERSWORD);
+        zelda = new Hylian("Zelda", 200, 500, Weapon.RAPIER );
+        revali = new Rito("Revali", 500, 400, Weapon.DAKULEAF);
     }
 
     @Test
@@ -44,6 +44,13 @@ public class PlayerTests {
     @Test
     public void canGetWeaponDamage(){
         assertEquals(200, zelda.getWeaponDamage());
+    }
+
+
+    @Test
+    public void attackReducesHealth(){
+        zelda.attack(link);
+        assertEquals(100, link.getHealth());
     }
 
 

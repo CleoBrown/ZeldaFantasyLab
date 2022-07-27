@@ -25,8 +25,8 @@ public abstract class Fighter extends Player   {
         return this.weapon.getDamage();
     }
 
-    public void attack(Baddies baddy){
-        baddy.reduceHealth(this.weapon.getDamage());
+    public void attack(Player player){
+        player.reduceHealth(this.weapon.getDamage());
     }
 
     public void setWeapon(Weapon weapon){

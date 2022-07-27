@@ -17,6 +17,7 @@ public abstract class Player {
         return name;
     }
 
+
     public void setName(String name) {
         this.name = name;
     }
@@ -32,5 +33,9 @@ public abstract class Player {
 
     public int getHealth() {
         return health;
+    }
+
+    public void reduceHealth(int value){
+        this.health -= value;
     }
 }
